@@ -1,7 +1,6 @@
 import ProcessorList from "../models/ProcessorListModel.js";
 import Users from "../models/UsersModel.js";
 import { Op } from "sequelize";
-import Memory from "../models/MemoryModel.js";
 
 export const getProcessorLists = async (req, res) => {
   let response;
