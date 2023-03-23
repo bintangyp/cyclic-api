@@ -31,9 +31,6 @@ const secretsess =
 
 const port = process.env.PORT || 3000;
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
 app.use(
   session({
     secret: process.env.SESS_SECRET || secretsess,
@@ -72,6 +69,10 @@ app.use(VgaCardRoute);
 app.use(PsuRoute);
 app.use(MoreRoute);
 app.use(TotalPriceRoute);
+
+app.get("/", (req, res) => {
+  res.send("Api Bekerja");
+});
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
