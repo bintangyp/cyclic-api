@@ -1,9 +1,6 @@
 import Memory from "../models/MemoryModel.js";
 import path from "path";
 import fs from "fs";
-import Users from "../models/UsersModel.js";
-import { Op } from "sequelize";
-import Motherboard from "../models/motherboardModel.js";
 
 export const getMemory = async (req, res) => {
   try {
